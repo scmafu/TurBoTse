@@ -1,11 +1,11 @@
 include $(ROOTDIR)/rules.mk
 
 PKG_NAME := lzma
-PKG_VERSION := 2600
+PKG_VERSION := 2601
 PKG_SOURCE := $(PKG_NAME)$(PKG_VERSION).7z
 PKG_SOURCE_URL := https://www.7-zip.org/a/
 PKG_BUILD_DIR := $(BUILD_DIR)/$(PKG_NAME)$(PKG_VERSION)
-
+PKG_HASH := c935fd04dd8e0e8c688a3078f3675d699679a90be81c12686837e0880aa0fa1e
 include $(INCLUDE_DIR)/package.mk
 
 define Build/Prepare
